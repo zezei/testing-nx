@@ -1,25 +1,25 @@
 {
-  "name": "booking-trekker-patagonia",
+  "name": "accomodations-manager",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "booking-trekker-patagonia",
-  "sourceRoot": "apps/booking-trekker-patagonia/src",
-  "tags": [],
+  "prefix": "btp",
+  "sourceRoot": "apps/accomodations-manager/src",
+  "tags": ["scope:accomodations-manager", "type:app"],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/booking-trekker-patagonia",
-        "index": "apps/booking-trekker-patagonia/src/index.html",
-        "main": "apps/booking-trekker-patagonia/src/main.ts",
+        "outputPath": "dist/apps/accomodations-manager",
+        "index": "apps/accomodations-manager/src/index.html",
+        "main": "apps/accomodations-manager/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/booking-trekker-patagonia/tsconfig.app.json",
+        "tsConfig": "apps/accomodations-manager/tsconfig.app.json",
         "assets": [
-          "apps/booking-trekker-patagonia/src/favicon.ico",
-          "apps/booking-trekker-patagonia/src/assets"
+          "apps/accomodations-manager/src/favicon.ico",
+          "apps/accomodations-manager/src/assets"
         ],
-        "styles": ["apps/booking-trekker-patagonia/src/styles.scss"],
+        "styles": ["apps/accomodations-manager/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -53,10 +53,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "booking-trekker-patagonia:build:production"
+          "browserTarget": "accomodations-manager:build:production"
         },
         "development": {
-          "browserTarget": "booking-trekker-patagonia:build:development"
+          "browserTarget": "accomodations-manager:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -64,7 +64,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "booking-trekker-patagonia:build"
+        "browserTarget": "accomodations-manager:build"
       }
     },
     "lint": {
@@ -72,8 +72,8 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "apps/booking-trekker-patagonia/**/*.ts",
-          "apps/booking-trekker-patagonia/**/*.html"
+          "apps/accomodations-manager/**/*.ts",
+          "apps/accomodations-manager/**/*.html"
         ]
       }
     },
@@ -81,7 +81,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/booking-trekker-patagonia/jest.config.ts",
+        "jestConfig": "apps/accomodations-manager/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -94,7 +94,7 @@
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "booking-trekker-patagonia:build"
+        "buildTarget": "accomodations-manager:build"
       }
     }
   }

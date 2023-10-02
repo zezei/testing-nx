@@ -1,0 +1,3 @@
+npx nx g @nx/angular:application accomodations-manager --tags=scope:accomodations-manager,type:app
+
+npx nx g @nx/angular:library smart-components/login --directory=libs/accomodations-manager/feat-auth --tags=scope:accomodations-manager,type:feat --routing --lazy

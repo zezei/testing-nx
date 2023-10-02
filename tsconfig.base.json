@@ -14,7 +14,18 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@booking-trekker-patagonia/shared-ui": ["libs/shared/ui/src/index.ts"],
+      "@booking-trekker-patagonia/shared/ui/shared-ui": [
+        "libs/shared/ui/shared-ui/src/index.ts"
+      ],
+      "@booking-trekker-patagonia/shell": [
+        "libs/accomodations-manager/feat-shell/src/index.ts"
+      ],
+      "@booking-trekker-patagonia/smart-components/login": [
+        "libs/accomodations-manager/feat-auth/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

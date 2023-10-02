@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'booking-trekker-patagonia',
-  preset: '../../jest.preset.js',
+  displayName: 'smart-components/login',
+  preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/apps/booking-trekker-patagonia',
+  coverageDirectory: '../../../coverage/libs/accomodations-manager/feat-auth',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

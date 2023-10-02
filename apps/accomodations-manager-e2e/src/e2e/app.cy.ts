@@ -1,6 +1,6 @@
 import { getGreeting } from '../support/app.po';
 
-describe('booking-trekker-patagonia', () => {
+describe('accomodations-manager', () => {
   beforeEach(() => cy.visit('/'));
 
   it('should display welcome message', () => {
@@ -8,6 +8,6 @@ describe('booking-trekker-patagonia', () => {
     cy.login('my-email@something.com', 'myPassword');
 
     // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains('Welcome booking-trekker-patagonia');
+    getGreeting().contains('Welcome accomodations-manager');
   });
 });
